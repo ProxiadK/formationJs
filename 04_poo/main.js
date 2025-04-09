@@ -91,7 +91,7 @@ function Book(title) {
   this.title = title;
 }
 
-Book.prototype.read = () => `the title is ${this.title} `
+Book.prototype.read = function() { return  `the title is ${this.title} `}
 
 log(new Book("seigneru des O").read())
 
